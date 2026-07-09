@@ -82,7 +82,9 @@ Les hooks ne s'activent que dans un dossier d'engagement (présence de `scope.tx
                                                      ├─ evidence/ (auto-archivé)
    travailler les catégories web-app-testing        │  findings/
 exploit-triage (agent)        → priorise les leads   │  engagement.log (auto)
-   privesc-linux / -windows   → si foothold          │
+   [exploitation validée par l'opérateur] → foothold │
+privesc-triage (agent)        → si shell bas-priv :  │  trie les vecteurs de privesc
+   (skills privesc-linux / -windows)                 │
 /pentest-note "…"             → capture au fil de l'eau
 report-writer / /pentest-report → rapport final CVSS
 ```
@@ -97,7 +99,7 @@ l'engagement et enchaîne la bonne étape.
 - Kit & hooks : `~/.claude/pentest-kit/` (`scope-guard.py`, `evidence-archiver.py`,
   `new-engagement.sh`, `templates/`, `README.md`)
 - Skills : `~/.claude/skills/{recon-methodology,web-app-testing,privesc-linux,privesc-windows,pentest-reporting}/`
-- Agents : `~/.claude/agents/{pentest-lead,recon-agent,exploit-triage,report-writer}.md`
+- Agents : `~/.claude/agents/{pentest-lead,recon-agent,exploit-triage,privesc-triage,report-writer}.md`
 - Commandes : `~/.claude/commands/pentest-{recon,note,report}.md`
 
 ## 🔄 Installer / synchroniser (dépôt ⇄ ~/.claude)
