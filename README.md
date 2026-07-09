@@ -99,6 +99,20 @@ l'engagement et enchaîne la bonne étape.
 - Agents : `~/.claude/agents/{pentest-lead,recon-agent,exploit-triage,report-writer}.md`
 - Commandes : `~/.claude/commands/pentest-{recon,note,report}.md`
 
+## 🔄 Installer / synchroniser (dépôt ⇄ ~/.claude)
+
+Le dépôt est la **source de vérité** ; `~/.claude` est là où Claude Code charge le kit.
+
+```bash
+./install.sh          # déploie le dépôt vers ~/.claude (1re install / après git clone)
+./sync.sh diff        # montre ce qui diffère entre le dépôt et ~/.claude
+./sync.sh deploy      # dépôt      -> ~/.claude   (après un git pull)
+./sync.sh collect     # ~/.claude  -> dépôt        (récupère tes éditions live)
+```
+
+Cycle typique quand tu modifies un skill dans `~/.claude` : `./sync.sh collect`,
+puis `git diff` → `git add -A && git commit && git push`.
+
 ## 🔧 Personnalisation
 
 - Ajouter un outil surveillé : édite l'ensemble `OFFENSIVE_TOOLS` dans
