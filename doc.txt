@@ -48,6 +48,7 @@ Le scaffolder crée : `.claude/settings.json` (hooks branchés), `scope.txt`,
 | `pentest-lead` | **chef d'orchestre** : évalue l'état de l'engagement et lance/dispatche la bonne étape | décide, coordonne |
 | `recon-agent` | scan & enumération, résume | read-only / low-impact |
 | `exploit-triage` | note l'exploitabilité, mappe CVE, propose le PoC le plus sûr | **consultatif** |
+| `privesc-triage` | après un shell : trie les vecteurs de privesc (Linux/Windows), plus sûr d'abord | **consultatif** |
 | `report-writer` | rédige le rapport final depuis findings/ + evidence/ | aucun Bash (lecture seule) |
 
 Lancer un agent : demande à Claude, p.ex. « utilise l'agent `pentest-lead` pour
