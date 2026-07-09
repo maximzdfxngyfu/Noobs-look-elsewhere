@@ -115,7 +115,9 @@ puis `git diff` → `git add -A && git commit && git push`.
 
 ## 🔧 Personnalisation
 
-- Ajouter un outil surveillé : édite l'ensemble `OFFENSIVE_TOOLS` dans
-  `scope-guard.py` **et** `evidence-archiver.py`.
+- Ajouter un outil surveillé : édite **une seule fois** `pentest-kit/offensive-tools.txt`
+  (liste partagée par les deux hooks). Les énumérateurs locaux (linpeas, winpeas, pspy…)
+  se déclarent dans `pentest-kit/local-enum-tools.txt` (archivés seulement, pas de
+  contrôle de scope).
 - Autoriser un domaine d'infra (dépôt, registre) : ajoute-le à `INFRA_ALLOW` dans
   `scope-guard.py`.

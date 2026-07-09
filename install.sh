@@ -23,7 +23,7 @@ for f in "$SRC"/agents/*.md;   do cp "$f" "$DEST/agents/";   echo "  agent   $(b
 for f in "$SRC"/commands/*.md; do cp "$f" "$DEST/commands/"; echo "  command $(basename "$f")"; done
 
 # Pentest-kit tooling (hooks, scaffolder, templates)
-cp "$SRC"/pentest-kit/*.py "$SRC"/pentest-kit/new-engagement.sh "$SRC"/pentest-kit/README.md "$DEST/pentest-kit/"
+cp "$SRC"/pentest-kit/*.py "$SRC"/pentest-kit/*.txt "$SRC"/pentest-kit/new-engagement.sh "$SRC"/pentest-kit/README.md "$DEST/pentest-kit/"
 cp "$SRC"/pentest-kit/templates/* "$DEST/pentest-kit/templates/"
 chmod +x "$DEST"/pentest-kit/*.py "$DEST"/pentest-kit/new-engagement.sh
 echo "  tooling scope-guard.py, evidence-archiver.py, new-engagement.sh, templates/"

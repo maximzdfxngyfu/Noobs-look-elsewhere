@@ -34,6 +34,10 @@ description: Structured methodology for authorised reconnaissance and enumeratio
 ## Phase 3 — Service-specific enumeration (common services)
 - **HTTP/HTTPS (80/443/8080/8443):** go to Phase 4.
 - **SMB (139/445):** `enum4linux-ng <host>`, `smbmap -H <host>`, `smbclient -L //<host>/ -N`.
+  - OS/dialect + signing: `nmap -sV -sC -p139,445 <host>` (note SMBv1 & `message_signing: disabled`).
+  - **Safe** vuln detection (read-only, no exploit): `nmap --script "smb-vuln-ms17-010" -p445 <host>`.
+    Do NOT run the intrusive `smb-vuln-ms08-067` script on fragile/legacy hosts — it can crash them.
+  - (`smbmap` may crash on recent Python/impacket; fall back to `smbclient`/`enum4linux-ng`.)
 - **FTP (21):** banner, check anonymous login.
 - **SSH (22):** version/banner only; do NOT brute-force without approval.
 - **DNS (53):** `dnsrecon -d <domain>`; attempt AXFR only if authorised.
