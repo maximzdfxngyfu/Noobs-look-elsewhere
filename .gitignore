@@ -1,0 +1,14 @@
+# Never commit real engagement data if an engagement is ever scaffolded in-tree
+engagement.log
+evidence/
+findings/
+report/
+scope.txt
+!pentest-kit/templates/scope.txt
+RULES-OF-ENGAGEMENT.md
+!pentest-kit/templates/RULES-OF-ENGAGEMENT.md
+
+# OS / editor cruft
+.DS_Store
+*.swp
+__pycache__/
